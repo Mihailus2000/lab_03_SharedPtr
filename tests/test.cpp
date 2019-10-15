@@ -140,6 +140,8 @@ TEST_F(SharedPtrTest, reset){
     EXPECT_EQ(intPointer.get(), resetPtr);
     EXPECT_EQ(intPointer.use_count(), 1u);
     EXPECT_EQ(*intPointer, *resetPtr);
+    EXPECT_EQ(*intPointer, *resetPtr);
+
 
 
 }
