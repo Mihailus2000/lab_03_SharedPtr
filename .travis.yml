@@ -4,7 +4,8 @@
   - minimal
   services:
   - docker
-
+  
+jobs:
   include:
   - name: "checks"
     script:
