@@ -17,6 +17,9 @@ install:
 
 script:
   - ctest -V
+  - name: "checks"
+      script:
+        - docker run -v `pwd`:`pwd` -w `pwd` --cap-add=SYS_PTRACE -t rusdevops/bootstrap-cpp scripts/checks.sh
 
 addons:
   apt:
